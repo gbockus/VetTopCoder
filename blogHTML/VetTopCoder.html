@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generated-by" content="Markdown PRO, http://markdownpro.com"/>
+<title></title>
+<style type="text/css">
+html,body{margin:0;padding:0;}
+body {padding: 20px}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+q:before,q:after,blockquote:before,blockquote:after{content:"";}
+html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+a:focus{outline:thin dotted;}
+a:hover,a:active{outline:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+button,input{line-height:normal;*overflow:visible;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
+input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+textarea{overflow:auto;vertical-align:top;}
+html,body{background-color:#ffffff;}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:18px;color:#404040;}
+.container{width:940px;margin-left:auto;margin-right:auto;zoom:1;}.container:before,.container:after{display:table;content:"";zoom:1;*display:inline;}
+.container:after{clear:both;}
+.container-fluid{position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
+.container-fluid:after{clear:both;}
+.container-fluid>.sidebar{float:left;width:220px;}
+.container-fluid>.content{margin-left:240px;}
+a{color:#0069d6;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;}
+.pull-right{float:right;}
+.pull-left{float:left;}
+.hide{display:none;}
+.show{display:block;}
+.row{zoom:1;margin-left:-20px;}.row:before,.row:after{display:table;content:"";zoom:1;*display:inline;}
+.row:after{clear:both;}
+p{font-size:13px;font-weight:normal;line-height:18px;margin-bottom:9px;}p small{font-size:11px;color:#bfbfbf;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
+h1{margin-bottom:18px;font-size:30px;line-height:36px;}h1 small{font-size:18px;}
+h2{font-size:24px;line-height:36px;}h2 small{font-size:14px;}
+h3,h4,h5,h6{line-height:36px;}
+h3{font-size:18px;}h3 small{font-size:14px;}
+h4{font-size:16px;}h4 small{font-size:12px;}
+h5{font-size:14px;}
+h6{font-size:13px;color:#bfbfbf;text-transform:uppercase;}
+ul,ol{margin:0 0 18px 25px;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
+ul{list-style:disc;}
+ol{list-style:decimal;}
+li{line-height:18px;color:#808080;}
+ul.unstyled{list-style:none;margin-left:0;}
+dl{margin-bottom:18px;}dl dt,dl dd{line-height:18px;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:9px;}
+hr{margin:20px 0 19px;border:0;border-bottom:1px solid #eee;}
+strong{font-style:inherit;font-weight:bold;}
+em{font-style:italic;font-weight:inherit;line-height:inherit;}
+.muted{color:#bfbfbf;}
+blockquote{margin-bottom:18px;border-left:5px solid #eee;padding-left:15px;}blockquote p{font-size:14px;font-weight:300;line-height:18px;margin-bottom:0;}
+blockquote small{display:block;font-size:12px;font-weight:300;line-height:18px;color:#bfbfbf;}blockquote small:before{content:'\2014 \00A0';}
+address{display:block;line-height:18px;margin-bottom:18px;}
+code,pre{padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+code{padding:1px 3px;}
+pre{background-color:#f5f5f5;display:block;padding:8.5px;margin:0 0 18px;line-height:18px;font-size:12px;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+form{margin-bottom:18px;}
+fieldset{margin-bottom:18px;padding-top:18px;}fieldset legend{display:block;padding-left:150px;font-size:19.5px;line-height:1;color:#404040;*padding:0 0 5px 145px;*line-height:1.5;}
+form .clearfix{margin-bottom:18px;zoom:1;}form .clearfix:before,form .clearfix:after{display:table;content:"";zoom:1;*display:inline;}
+form .clearfix:after{clear:both;}
+label,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:normal;}
+label{padding-top:6px;font-size:13px;line-height:18px;float:left;width:130px;text-align:right;color:#404040;}
+form .input{margin-left:150px;}
+input[type=checkbox],input[type=radio]{cursor:pointer;}
+input,textarea,select,.uneditable-input{display:inline-block;width:210px;height:18px;padding:4px;font-size:13px;line-height:18px;color:#808080;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+input[type=checkbox],input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;border:none;}
+input[type=file]{background-color:#ffffff;padding:initial;border:initial;line-height:initial;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+input[type=button],input[type=reset],input[type=submit]{width:auto;height:auto;}
+select,input[type=file]{height:27px;line-height:27px;*margin-top:4px;}
+select[multiple]{height:inherit;}
+textarea{height:auto;}
+.uneditable-input{background-color:#ffffff;display:block;border-color:#eee;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);cursor:not-allowed;}
+:-moz-placeholder{color:#bfbfbf;}
+::-webkit-input-placeholder{color:#bfbfbf;}
+input,textarea{-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;-moz-transition:border linear 0.2s,box-shadow linear 0.2s;-ms-transition:border linear 0.2s,box-shadow linear 0.2s;-o-transition:border linear 0.2s,box-shadow linear 0.2s;transition:border linear 0.2s,box-shadow linear 0.2s;-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);}
+input:focus,textarea:focus{outline:0;border-color:rgba(82, 168, 236, 0.8);-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);}
+input[type=file]:focus,input[type=checkbox]:focus,select:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:1px dotted #666;}
+form div.clearfix.error{background:#fae5e3;padding:10px 0;margin:-10px 0 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form div.clearfix.error>label,form div.clearfix.error span.help-inline,form div.clearfix.error span.help-block{color:#9d261d;}
+form div.clearfix.error input,form div.clearfix.error textarea{border-color:#c87872;-webkit-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);-moz-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);box-shadow:0 0 3px rgba(171, 41, 32, 0.25);}form div.clearfix.error input:focus,form div.clearfix.error textarea:focus{border-color:#b9554d;-webkit-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);-moz-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);box-shadow:0 0 6px rgba(171, 41, 32, 0.5);}
+form div.clearfix.error .input-prepend span.add-on,form div.clearfix.error .input-append span.add-on{background:#f4c8c5;border-color:#c87872;color:#b9554d;}
+table{width:100%;margin-bottom:18px;padding:0;border-collapse:separate;*border-collapse:collapse;font-size:13px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left;}
+table th{padding-top:9px;font-weight:bold;vertical-align:middle;border-bottom:1px solid #ddd;}
+table td{vertical-align:top;}
+table th+th,table td+td{border-left:1px solid #ddd;}
+table tr+tr td{border-top:1px solid #ddd;}
+table tbody tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0;}
+table tbody tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0;}
+table tbody tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px;}
+table tbody tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0;}
+.zebra-striped tbody tr:nth-child(odd) td{background-color:#f9f9f9;}
+.zebra-striped tbody tr:hover td{background-color:#f5f5f5;}
+.zebra-striped .header{cursor:pointer;}.zebra-striped .header:after{content:"";float:right;margin-top:7px;border-width:0 4px 4px;border-style:solid;border-color:#000 transparent;visibility:hidden;}
+.zebra-striped .header:hover:after{visibility:visible;}
+footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
+.page-header{margin-bottom:17px;border-bottom:1px solid #ddd;-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);-moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);}.page-header h1{margin-bottom:8px;}
+.close{float:right;color:#000000;font-size:20px;font-weight:bold;line-height:13.5px;text-shadow:0 1px 0 #ffffff;filter:alpha(opacity=20);-khtml-opacity:0.2;-moz-opacity:0.2;opacity:0.2;}.close:hover{color:#000000;text-decoration:none;filter:alpha(opacity=40);-khtml-opacity:0.4;-moz-opacity:0.4;opacity:0.4;}
+
+pre {
+	padding: 0;
+	margin: 10px 0px 10px;
+	overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+pre code {
+	margin: 5px;  /*--Left Margin--*/
+	padding: 0px;
+	display: block;
+    line-height: 18px;
+}
+.center { text-align:center}
+.left {text-align:left}
+.right {text-align:right}
+
+</style><style type="text/css">
+body {
+	font-family: "Geneva", Arial, sans-serif;
+	font-size: 13px;
+	margin: 10px;
+}
+
+a, a:visited {
+	color: #09c;
+}
+
+a:hover {
+	color: #336699;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0px 0px 10px;	
+	font-weight: bold;
+}
+
+h2 {
+	border-bottom: 2px dotted #ccc;
+	margin: 5px 0px 15px;	
+}
+
+h6 {
+	color: #09c;
+}
+
+blockquote {
+	font-family: "Georgia", Courier New, courier, sans-serif;
+	background: #efefef;
+	padding: 5px 10px;
+	border: solid 1px #ddd;
+	margin: 15px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	color:  #333;
+	
+}
+
+ul, ol {
+	margin-bottom: 15px;
+}
+
+li {
+	padding: 3px;
+}
+
+
+
+code {
+	background-color: #f1f1f1;
+    color: #336699;
+}
+
+pre {
+	background-color: #f1f1f1;
+}
+
+pre > code {
+	margin: 0px;
+	padding: 5px;
+	border: 0px;
+	background-color: #f1f1f1;
+}
+
+
+</style></head>
+<body>
+<h1 id="toc_0">How to Lightning - A javascript developers guide to ramping up on Salesforce Lightning Component development.</h1>
+
+<p>The point of this guide isn&#39;t to introduce you to lightning components or getting started with Salesforce development.  There are already great posts out there for that purpose.  I suggest reading the <a href="https://www.topcoder.com/challenge-details/30046850/?type=develop" title="Lightning App - Fix My Sick Doggie! -- Redux">Build your first lightning component tutorial</a> and even skimming the <a href="https://github.com/gbockus/VetTopCoder" title="VetTopCoder">lightning developer guide</a> if you need the basics.  The purpose of this post is to enable you as a javascript developer to ramp up quickly on lightning development by walking through some of the issues and solutions I found developing my first lightning component.</p>
+
+<p>I was introduced to Lightning components at the developers keynote at Dreamforce.  There they also announced the  <a href="http://lightning.topcoder.com/" title="lightning.topcoder.com">lightning.topcoder.com</a> competition where developers could both dive into lightning component development and potentially win a some cash, a win win in my book.  The first component I built was for the 
+<a href="https://www.topcoder.com/challenge-details/30046850/?type=develop" title="Lightning App - Fix My Sick Doggie! -- Redux">Lightning App - Fix My Sick Doggie! -- Redux competition</a>.  Find the resulting component and apex code in my <a href="https://github.com/gbockus/VetTopCoder" title="VetTopCoder">VetTopCoder</a> github repository.  </p>
+
+<p><img src="images/form.png" alt="form"/>.
+<img src="images/vet.png" alt="form"/>.
+<img src="images/viewer.png" alt="form"/>.</p>
+
+<h2 id="toc_1">Third Party Dependancies</h2>
+
+<p>By day I build web application primarily using angularjs.  So my first instinct was to go with angular via CDN as a technology backing my lightning component.  However I quickly realized that lightning components do not allow you to load javascript libraries from a source outside of your salesforce domain.  In order to load a javascript file you need to upload it as a static resource.  This is done in the setup view of the salesforce.com organization. I suggest downloading the dependency you would like to use in your application and creating a zip archive including those resources. An additional requirement is that you create a package in your organization.  The package will be used to reference your static resources.  </p>
+
+<p>For example I ended up using JQuery in my application (angular uses the url for routing to different views in an application and I hadn&#39;t figured how to get around that in a lightning component at the time) so I downloaded JQuery and created a zip file that contained the following files: </p>
+
+<ul>
+<li>jquery.js</li>
+<li>jquery.min.js</li>
+<li>jquery.min.map</li>
+</ul>
+
+<p>After this was uploaded I was able to verify I could access the js file by hitting it in my browser at </p>
+
+<pre><code>https://na17.salesforce.com/resource/Gordonk66__jquery/jquery.jsresource/Gordonk66__jquery/jquery.js
+</code></pre>
+
+<p>Where </p>
+
+<ul>
+<li><a href="https://na17.salesforce.com">https://na17.salesforce.com</a> - My salesforce instance</li>
+<li>Gordonk66 - My package name</li>
+<li>jquery - The static resource name</li>
+<li>jquery.js - The file inside my zip achieve </li>
+</ul>
+
+<p>Excellent so now I have the third party resources that I require for my application. But there is still an issue where the resource isn&#39;t loaded by the time the application renders.  Lightning components  are loaded differently then a standard web application so there has to be some addition wiring in order to load the dependancies.  After struggling for a bit I happened upon this excellent blog post that describes using requirejs to load dependancies for lightning components: </p>
+
+<p><a href="http://enreeco.blogspot.com/2014/10/salesforce-lightning-loading-scripts.html">http://enreeco.blogspot.com/2014/10/salesforce-lightning-loading-scripts.html</a></p>
+
+<p>Essentially it adds a lightning component dependency to your component that will load requirejs then fire a lightning event that will trigger a controller function in your code that calls a helper function where you specify third party dependancies.  I&#39;ve used this on all of my lightning components and it has worked perfectly. See the blog post for the details of getting it working, but the at a high level you add the following to your component</p>
+
+<pre><code>  &lt;aura:handler event=&quot;Gordonk66:requiresReady&quot; action=&quot;{!c.initScripts}&quot;/&gt;
+</code></pre>
+
+<p>(note you must your the installed pages or your own package)</p>
+
+<p>This results in calling the controller initScripts function that calls the Helper initScripts function.  In the helper you specify your dependancies in a requirejs config object </p>
+
+<pre><code class="javascript"> requirejs.config({
+        baseUrl: &quot;/resource/&quot;,
+        paths: {
+          jquery: &quot;/resource/Gordonk66__jquery/jquery&quot;,
+          bootstrap: &quot;/resource/Gordonk66__aotp_bootstrap/js/bootstrap&quot;,
+          bootstrapValidator: &quot;/resource/Gordonk66__bootstrapvalidator/bootstrapvalidator/dist/js/bootstrapValidator&quot;
+        },
+        shim: {
+          bootstrap: {deps: [&quot;jquery&quot;]},
+          bootstrapValidator: {deps: [&quot;jquery&quot;]}
+        }
+</code></pre>
+
+<p>After the scripts have loaded the function is called again in the afterRender function of your component renderer and any follow on setup, like binding to DOM elements, can occur.  See one of the Helpers in the VetTopCoder repository for a working example. </p>
+
+<h2 id="toc_2">Useful Lightning/Aura Element Attributes</h2>
+
+<p>While you are able to use standard web application tools to build the lightning component there are several useful aura/lightning element attributes that can enable your application to wire together the lightning component.  Note there are many more then I&#39;ve listed here, but these are the ones I&#39;ve found most useful.</p>
+
+<h3 id="toc_3">aura:id</h3>
+
+<p>The id tag enables you to assign a unique id to elements in your lightning component.  This is useful because you are able to do DOM lookups using the component.get(&#39;myId&#39;) function that will ensure a unique id for your component.  Keep in mind you could have multiple instances of you lightning component in a single application and using this tag will ensure there are no duplication id attributes on your DOM elements. </p>
+
+<h3 id="toc_4">aura:attribute</h3>
+
+<p>The attribute tag is how you can define salesforce data to be stored for the component.  It has been very useful to use the lightning infrastructure to call an apex controller that will populate an aura attribute.  Then firing a lightning event enables me to continue processing the data in my application with the third party library handlers.  </p>
+
+<h3 id="toc_5">aura:handler</h3>
+
+<p>This tag wires a handler function in your lightning controller to lightning events.  This is useful because it enables you to do data lookups and have access to a current component object when  processing data returned from a salesforce apex controller. </p>
+
+<h3 id="toc_6">aura:iterator</h3>
+
+<p>This tag enables you to iterate over an aura:attribute that is a list and display data associated with that data in the DOM.  It&#39;s a nice real time update to the page without having to build out the DOM via javascript.</p>
+
+<h2 id="toc_7">Developer Tools</h2>
+
+<p>One thing I struggled with initially was doing all my development in the browser via the Salesforce developer console.  I prefer a more configurable IDE when doing development.  Luckily I happened upon the Sublime text plugin for lighting development: </p>
+
+<p><a href="https://github.com/dcarroll/sublime-lightning">https://github.com/dcarroll/sublime-lightning</a></p>
+
+<p>It enables login to salesforce inside the sublime text and creates or edits lightning components.  It will then sync changes back to salesforce on save.  It displays an error message if there is a syntax or formatting problem when syncing with Salesforce.  </p>
+
+<p>This was a huge development boost for me and I have nothing but good things to say about it.  You will need to do your apex code development in the developer console, but with the automatic validation and apex being a fairly small portion of your code base  for lightning components it isn&#39;t bad. </p>
+
+<p>So there you have it.  As a javascript developer you&#39;re now ready to hit the ground running developer lightning components.</p>
+
+</body>
+</html>
