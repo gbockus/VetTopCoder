@@ -1,0 +1,70 @@
+<aura:component controller="Gordonk66.VetReporterController" implements="force:appHostable">
+	<aura:attribute name="title" type="String" default="Vet Viewer"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
+    <Gordonk66:requires styles="/resource/Gordonk66__aotp_bootstrap/css/aotp_bootstrap.css"/>
+    <aura:handler event="Gordonk66:requiresReady" action="{!c.initScripts}" />
+    <aura:attribute name="animals" type="Gordonk66.Animal__c[]"/>
+    <aura:attribute name="currentAnimal" type="Gordonk66.Animal__c"/>  
+    <aura:attribute name="injuries" type="Gordonk66.Animal_Injury__c[]"/>
+    <aura:handler event="Gordonk66:CurrentAnimalSet" action="{!c.handleAnimalUpdate}" />
+
+    <div class="aotp">
+        <h4>Vet Viewer</h4>
+        <div class="vet-reporter-ctr">
+            <table class="animal-table table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Owner</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th></th>
+                    </tr>                   
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.animals}" var="a">
+                      <tr id="{!a.id}" class="animal-tr" onclick="{!c.handleAnimalClick}">
+                        <td>{!a.Gordonk66__Owner_Name__c}</td>
+                        <td>{!a.name}</td>
+                        <td>{!a.Gordonk66__Animal_Type__c}</td>
+                        <td><span class="glyphicon glyphicon-arrow-right"></span></td>
+	                  </tr>	
+                    </aura:iteration> 
+                </tbody>
+            </table>
+            <div class="animal-report hidden">
+                <button class="btn" onclick="{!c.showAnimalTable}"><span class="glyphicon glyphicon-arrow-left"></span></button>
+                <div>
+	                <div class="animal-line"><label>Owner Name: </label><div class="animal-field"><span class="owner-name"></span></div></div>
+                </div>
+                <div>
+	                <div class="animal-line"><label>Name: </label><div class="animal-field"><span class="animal-name"></span></div></div>
+                </div>
+                <div>
+	                <div class="animal-line"><label>Age: </label><div class="animal-field"><span class="animal-age"></span></div></div>
+                </div>
+                <div>
+	                <div class="animal-line"><label>Type: </label><div class="animal-field"><span class="animal-type"></span></div></div>
+                </div>
+                <div>
+	                <div class="animal-line"><label>Breed: </label><div class="animal-field"><span class="animal-breed"></span></div></div>
+                </div>
+                <div>
+	                <div class="animal-line"><label>Problem: </label><div class="animal-field"><span class="animal-problem"></span></div></div>
+                </div> 
+                <div>
+                <div class="animal-line" onclick="{!c.loadInjuries}"><label label-default="" class="tree-toggler nav-header icon-plus">Injuries: </label><div class="animal-field"></div></div>
+                </div>
+                <table class="injuries-table table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Body Part</th>
+                            <th>Description</th>
+                        </tr> 
+                    </thead>
+                    <tbody class="injuries-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</aura:component>

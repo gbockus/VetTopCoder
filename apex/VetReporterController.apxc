@@ -1,0 +1,32 @@
+public class VetReporterController {
+
+    @AuraEnabled
+    public static Animal__c insertAnimal(String name, String ownerName, String problemDesc, String breed, String animalType, Integer age) {
+        
+        Animal__c animal = new Animal__C(
+            name = name, Gordonk66__Owner_Name__c = ownerName, Gordonk66__Problem__c = problemDesc, Gordonk66__breed__c = breed, Gordonk66__Animal_Type__C = animalType, Gordonk66__Animal_Age__c = age
+        );     
+        insert animal;
+        return animal;
+    }
+    
+    @AuraEnabled 
+    public static void insertInjury(String animalId, String name, String injuryDesc) {
+        Animal_Injury__c injury = new Animal_Injury__c(
+            name = name, Gordonk66__Associated_Animal__c = animalId, Gordonk66__Injury_Description__c = injuryDesc
+        );
+        insert injury;
+        return;
+    }
+    
+    @AuraEnabled
+    public static List<Animal__c> getAnimals() {
+        return [SELECT Id, name, Animal_Age__c, Animal_Type__c, Breed__c, Owner_Name__c, Problem__c, Seen__c from Animal__c];
+    }
+    
+    @AuraEnabled
+    public static List<Animal_Injury__c> getAnimalInjuries(String animalId) {
+        return [SELECT Name, Injury_Description__c from Animal_Injury__c where Associated_Animal__c = :animalId];
+    }
+    
+}

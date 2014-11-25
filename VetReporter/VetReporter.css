@@ -1,0 +1,266 @@
+.THIS h4 {
+    margin: 10px;
+}
+
+.THIS .vet-action-btns-grp {
+    padding: 0 10px;
+}
+
+.THIS .vet-reporter-ctr {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #999999;
+}
+
+.THIS .animal-form input,
+.THIS .animal-form textarea {
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+.THIS.aotp .animal-form textarea,
+.THIS.aotp .injury-form textarea {
+    height: 100px;
+}
+
+.THIS .animal-form input:first-child {
+    margin-top: 0;
+}
+
+.THIS .animal-pic {
+	background-size: contain;
+    background-repeat: no-repeat;
+    height: 333px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.THIS .dog {
+    background-image: url('/resource/Gordonk66__animals/dog.png');
+}
+
+.THIS .dog .tail {
+    position: absolute;
+    width: 75px;
+    height: 110px;
+    left: 38px;
+    top: 7px;
+}
+
+.THIS .dog .head {
+    position: absolute;
+    width: 119px;
+    height: 89px;
+    left: 213px;
+    top: 31px;
+}
+
+.THIS .dog .back-legs {
+    position: absolute;
+    width: 97px;
+    height: 85px;
+    left: 0;
+    top: 238px;
+}
+
+.THIS .dog .front-legs {
+    position: absolute;
+    width: 70px;
+    height: 84px;
+    left: 200px;
+    top: 240px;
+}
+
+.THIS .dog .front-torso {
+    position: absolute;
+    width: 134px;
+    height: 120px;
+    left: 146px;
+    top: 120px;
+}
+
+.THIS .dog .back-torso {
+    position: absolute;
+    width: 108px;
+    height: 120px;
+    left: 38px;
+    top: 118px;
+}
+
+.THIS .cat {
+    height: 241px;
+    background-image: url('/resource/Gordonk66__animals/cat.jpeg');
+}
+
+.THIS .cat .tail {
+    position: absolute;
+    width: 112px;
+    height: 70px;
+    left: 217px;
+    top: 26px;
+}
+
+.THIS .cat .head {
+    position: absolute;
+    width: 91px;
+    height: 93px;
+    left: 7px;
+    top: 2px;
+}
+
+.THIS .cat .back-legs {
+    position: absolute;
+    width: 69px;
+    height: 75px;
+    left: 156px;
+    top: 103px;
+}
+
+.THIS .cat .front-legs {
+    position: absolute;
+    width: 69px;
+    height: 73px;
+    left: 86px;
+    top: 105px;
+}
+
+.THIS .cat .front-torso {
+    position: absolute;
+    width: 64px;
+    height: 80px;
+    left: 97px;
+    top: 25px;
+}
+
+.THIS .cat .back-torso {
+    position: absolute;
+    width: 58px;
+    height: 79px;
+    left: 160px;
+    top: 25px;
+}
+
+.THIS .horse {
+    background-image: url('/resource/Gordonk66__animals/horse.jpeg');
+}
+
+.THIS .horse .tail {
+    position: absolute;
+    width: 78px;
+    height: 66px;
+    left: 249px;
+    top: 87px;
+}
+
+.THIS .horse .head {
+    position: absolute;
+    width: 107px;
+    height: 90px;
+    left: 46px;
+    top: 7px;
+}
+
+.THIS .horse .back-legs {
+    position: absolute;
+    width: 136px;
+    height: 82px;
+    left: 165px;
+    top: 167px;
+}
+
+.THIS .horse .front-legs {
+    position: absolute;
+    width: 142px;
+    height: 81px;
+    left: 5px;
+    top: 167px;
+}
+
+.THIS .horse .front-torso {
+    position: absolute;
+    width: 106px;
+    height: 70px;
+    left: 77px;
+    top: 97px;
+}
+
+.THIS .horse .back-torso {
+    position: absolute;
+    width: 66px;
+    height: 60px;
+    left: 183px;
+    top: 98px;
+}
+
+.THIS.aotp .has-feedback label ~ .form-control-feedback {
+    top: 57px;
+    right: 5px;
+    font-size: 25px;
+}
+
+.THIS.aotp .form-control-feedback {
+    top: 8px;
+    right: 5px;
+    font-size: 25px;
+}
+
+.THIS .description-section .btn {
+    width: 100%;
+}
+
+.THIS .btn-default {
+    margin: 0;
+}
+.THIS textarea {
+	resize: none;
+}
+
+.THIS .animal-part-btn-ctr .btn-group-justified .btn {
+    width: 50%;
+}
+
+.THIS .animal-part-desc .injury-desc-ctr {
+    margin-bottom: 1px;
+}
+
+.THIS .section-header-animal,
+.THIS .section-header {
+    margin-bottom: 15px;
+}
+
+.THIS .section-header-animal {
+    margin-top: 5px;
+}
+
+.THIS.aotp .btn,
+.THIS.aotp .form-control,
+.THIS.aotp label,
+.THIS.aotp .has-error .help-block {
+    font-size: 24px;
+}
+
+.THIS.aotp .form-control {
+    height: 50px;
+    padding: 10px 15px;
+}
+
+.THIS.aotp h4 { 
+    font-size: 28px;
+}
+
+.THIS .btn-top-ctr {
+    margin-top: 35px;
+}
+
+.THIS.aotp .btn-primary.disabled {
+    background-color: #333333;
+    color: #999;
+}
+
+.THIS .reported-injuries {
+    font-size: 35px;
+    margin-top: 15px;
+}

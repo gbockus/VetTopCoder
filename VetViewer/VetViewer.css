@@ -1,0 +1,48 @@
+.THIS h4 {
+    margin: 10px;
+}
+
+
+.THIS .vet-reporter-ctr {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.THIS .aotp .table > tbody > tr > td {
+    line-height: 2em;
+}
+
+.THIS .animal-line div,
+.THIS .animal-line label,
+.THIS .animal-line {
+    display: inline-block
+}
+
+.THIS .animal-report label {
+    margin-right: 10px;
+    width: 110px;
+}
+
+.THIS .animal-report .btn {
+	margin-bottom: 15px;
+}
+
+
+.THIS .icon-plus {
+    background-image: url('/resource/Gordonk66__plusminus/plusminus/plus-8.png');
+}
+
+.THIS .icon-minus {
+    background-image: url('/resource/Gordonk66__plusminus/plusminus/minus-8.png');
+}
+
+.THIS .icon-plus,
+.THIS .icon-minus {
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: 0 center;
+    padding-left: 15px;
+}

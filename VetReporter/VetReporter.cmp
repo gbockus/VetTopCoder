@@ -1,0 +1,97 @@
+<aura:component controller="Gordonk66.VetReporterController" implements="force:appHostable">
+    <aura:attribute name="title" type="String" default="Vet Register"/>
+    <aura:attribute name="animal" type="Gordonk66.Animal__c"/>
+    <aura:attribute name="injuries" type="Gordonk66.Animal_Injury__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
+    <Gordonk66:requires styles="/resource/Gordonk66__aotp_bootstrap/css/aotp_bootstrap.css"/>
+    <Gordonk66:requires styles="/resource/Gordonk66__bootstrapvalidator/bootstrapvalidator/dist/css/bootstrap_validator.css"/>
+    <aura:handler event="Gordonk66:requiresReady" action="{!c.initScripts}" />
+
+    <div class="aotp">
+        <h4>Animal Entry Form</h4>
+        <div class="vet-reporter-ctr">
+            <form role="form" class="animal-form" action="javascript:return;">
+                <div class="description-section">
+                    <div class="form-group">
+                        <label class="section-header">Owner</label>
+                        <input type="text" class="form-control" id="ownername" name="ownername" placeHolder="Enter Owner Name"></input>
+                    </div>
+                    <label class="section-header-animal">Animal</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="animalName" name="animalname" placeHolder="Enter Name"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="animalAge" name="age" placeHolder="Enter Age"></input>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="animalBreed" name="breed" placeHolder="Enter Breed"></input>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" id="problemDescription" maxlength="255" name="problemdesc" placeHolder="Enter Brief Problem Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                    	<button type="submit" class="btn btn-default" onclick="{!c.handleDescriptionClick}">Continue</button>
+                    </div>
+	            </div>
+                <div class="type-section hidden">
+                    <div class="form-group">
+                        <label for="typeSelector">Select Type</label>
+                        <select id="typeSelector" class="form-control">
+                            <option disabled="true" selected="true"> -- select an option -- </option>
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Horse">Horse</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="animal-section hidden">
+                    <div class="form-group">
+                        <label>Please touch problem areas:</label>
+                        <div class="animal-pic">
+                            <div id="tail" class="tail" onclick="{!c.handleAnimalClick}"></div>
+                            <div id="head" class="head" onclick="{!c.handleAnimalClick}"></div>
+                            <div id="backLeg-" class="back-legs" onclick="{!c.handleAnimalClick}"></div>
+                            <div id="frontLeg-" class="front-legs" onclick="{!c.handleAnimalClick}"></div>
+                            <div id="backTorso" class="back-torso" onclick="{!c.handleAnimalClick}"></div>
+                            <div id="frontTorso" class="front-torso" onclick="{!c.handleAnimalClick}"></div>
+                        </div>    
+                        <div class="reported-injuries">Reported Injuries: <span class="injury-count"></span></div>
+                    </div>
+                    <div class="form-group animal-part-btn-ctr leg-selector hidden">
+                        <label>Select which leg</label>
+					    <div class="btn-group btn-group-justified">
+                            <button class="btn btn-default" onclick="{!c.pickLeft}">Left</button>
+                            <button class="btn btn-default" onclick="{!c.pickRight}">Right</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form role="form" name="InjuryForm" class="injury-form hidden" action="javascript:return;">
+                <div class="animal-part-desc">
+                    <div class="form-group injury-desc-ctr">
+                        <label class="injury-label" for="injuryDescription"></label>
+                        <textarea class="form-control injury-description" rows="3" name="injuryDescription" maxlength="255" placeHolder="Enter Specific Injury Details"></textarea>
+                    </div>
+                    <div class="form-group animal-part-btn-ctr">
+                        <div class="btn-group btn-group-justified">
+                            <button class="btn btn-danger glyphicon glyphicon-remove" onclick="{!c.cancelAddInjury}"></button>
+                            <button class="btn btn-success glyphicon glyphicon-ok" onclick="{!c.addInjury}"></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-top-ctr">
+                <div class="btn-group btn-group-justified vet-action-btns-grp">
+                    <div class="btn-group">
+                        <button class="btn btn-warning" onclick="{!c.reset}">Reset</button>
+                    </div>
+                    <div id="submitButton" class="btn-group hidden">
+                        <button id="saveBtn" class="btn btn-primary disabled" onclick="{!c.save}">Submit</button>
+                    </div>
+                </div>
+        	</div>	
+        </div>
+       
+
+    </div>
+</aura:component>

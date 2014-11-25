@@ -1,0 +1,19 @@
+@isTest
+                    
+public class TestVetReporterController {
+
+    static testMethod void test() {
+        
+        Animal__c animal = new Animal__c(
+            name='test animal',Gordonk66__Breed__c='poodle', Gordonk66__Owner_Name__c='Gordon Bockus', Gordonk66__Problem__c='a small problem', Gordonk66__Animal_Age__c=3
+        );
+        insert animal;
+        String animalId = animal.Id;
+
+        VetReporterController v = new VetReporterController();
+        System.assertEquals(animal.Id, VetReporterController.getAnimals()[0].Id);
+        System.assertEquals('george', VetReporterController.insertAnimal('george', 'frank', 'a problem', 'bulldog', 'Dog', 3).Name);
+		VetReporterController.insertInjury(animal.id, 'gordon', 'a desc');
+        System.assertEquals('gordon', VetReporterController.getAnimalInjuries(animal.Id)[0].Name);
+    }
+}
