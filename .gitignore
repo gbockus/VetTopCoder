@@ -1,0 +1,10 @@
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea/**/*.xom
+.idea
+
+# Mac OS X
+.DS_Storeidea
