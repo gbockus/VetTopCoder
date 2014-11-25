@@ -10,6 +10,10 @@ I was introduced to Lightning components at the developers keynote at Dreamforce
 [2]: https://github.com/gbockus/VetTopCoder "VetTopCoder"
 [3]: http://lightning.topcoder.com/ "lightning.topcoder.com"
 
+![form](images/form.png).
+![form](images/vet.png).
+![form](images/viewer.png).
+
 ## Third Party Dependancies
 By day I build web application primarily using angularjs.  So my first instinct was to go with angular via cdn as a technology to build my lightning component.  However I quickly realized that lightning components do not allow you to load javascript libraries from a source outside of your salesforce domain.  In order to load a javascript file you need to upload it as a static resource.  This is done in the developer console of the salesforce.com organization. I suggest downloading the dependency you would like to use in your application and creating a zip archive including those resources. An additional requirement is that you create a package in your organization.  The package will be used to reference your static resources.  
 For example I ended up using JQuery in my application (angular uses the url for routing to different views in an application and I hadn't figured how to get around that in a lightning component) so I downloaded JQuery and created a zip file that contained the following files: 
@@ -71,10 +75,9 @@ This tag enables you to iterate over an aura:attribute that is a list and displa
 ## Developer Tools 
 One thing I struggled with initially was doing all my development in the browser via the Salesforce developer console.  I prefer a more configurable IDE when doing development.  Luckily I happened upon the Sublime text plugin for lighting development: 
 	
-	<https://github.com/dcarroll/sublime-lightning>
+https://github.com/dcarroll/sublime-lightning
 	
 It enables you to login to salesforce inside the sublime text editor and create or edit lightning components.  It will then sync changes back to salesforce on save.  You will see an error message if there was a syntax or formatting problem when syncing with Salesforce.  This was a huge development boost for me and I have nothing but good things to say about it.  You will need to do your apex code development in the developer console, but with the automatic validation and apex being a fairly small portion of your code base  for lightning components it isn't bad. 
 
 So there you have it.  As a javascript developer you're now ready to hit the ground running developer lightning components.
-
 
